@@ -1,0 +1,13 @@
+/vendor
+/node_modules
+.env
+.idea
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
+
+!/public/js/vendor/*
+!/public/css/vendor/*
+
+/public/css
+/public/js

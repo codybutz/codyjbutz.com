@@ -1,0 +1,41 @@
+.navbar {
+  border: none;
+
+  .navbar-nav {
+    li a {
+      font-family: walkway-bold, serif;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+
+      border-bottom: solid 5px @primary-color;
+      &.active,
+      &:hover,
+      &:focus {
+        border-bottom: solid 5px darken(@secondary-color, 6.5%);
+      }
+    }
+  }
+
+  .navbar-brand {
+    &.brand-text {
+
+      padding: 15px 0 15px 10px;
+
+      font-family: "Lato", serif;
+      font-weight: bolder;
+      text-transform: uppercase;
+
+      font-size: 18px;
+
+      small {
+        font-weight: 100;
+        text-transform: none;
+      }
+
+    }
+
+    img {
+      transform: translateY(-25%);
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@primary-color: #2e3e4f;
+@secondary-color: #1dc4fb;
+
+@font-face {
+  font-family: walkway-black;
+  src: url(/fonts/walkway-black.ttf);
+}
+
+@font-face {
+  font-family: walkway-bold;
+  src: url(/fonts/walkway-bold.ttf);
+}
+
+// Breakpoints
+// ------------------------- Source: http://blog.scur.pl/2012/06/variable-media-queries-less-css/
+@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+~"only screen and (min-device-pixel-ratio: 1.5)";
+@mobile: ~"only screen and (max-width: 529px)";
+@tablet: ~"only screen and (min-width: 530px) and (max-width: 949px)";
+@desktop: ~"only screen and (min-width: 950px) and (max-width: 1128px)";
+@desktop-xl: ~"only screen and (min-width: 1129px)";
+
+@import "bootstrap/bootstrap";
+@import "fontawesome/font-awesome";
+
+@import "navigation";
+
+// Home Page
+@import "slider";
+@import "aboutme";
+@import "laptop-callout";
+@import "services";
+@import "portfolio";
+@import "testimonials";
+
+// Skills Page
+@import "skills";
+
+// Blog
+@import "blog";
+
+// Admin
+@import "admin";
+
+@import "footer";
+
+body {
+  padding-top: @navbar-height;
+}
+
+h1.section-title {
+  font-family: Lato, sans-serif;
+  font-size: 36px;
+  color: @primary-color;
+
+  &:after {
+    background-color: #00add8;
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -3px;
+    height: 3px;
+    width: 150px;
+    margin: 20px 0 5px -75px;
+  }
+}
+
+h2.callout-header {
+  font-family: walkway-bold, serif;
+  font-size: 40px;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
