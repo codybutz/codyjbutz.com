@@ -16,7 +16,7 @@ class ComposerServiceProvider extends ServiceProvider
     {
         View::composer('partials.home.testimonials', 'App\Http\Composers\TestimonialComposer');
         View::composer('partials.blog.sidebar', 'App\Http\Composers\BlogSidebarComposer');
-        View::composer('partials.blog.short-posts', 'App\Http\Composers\BlogIndexComposer');
+        View::composer('blog.index', 'App\Http\Composers\BlogIndexComposer');
         View::composer('admin.index', 'App\Http\Composers\AdminIndexComposer');
     }
 

@@ -9,8 +9,8 @@
             </div>
 
             <div class="post-content">
-                {!! truncate($post->parsedContent(), 500) !!}<a href="{{ route('blog.post', ['post' => $post->slug]) }}"
-                                                                title="{{ $post->title }}">Read More...</a>
+                {!! truncate($post->parsedContent(), 750) !!}
+                <a href="{{ route('blog.post', ['post' => $post->slug]) }}" title="{{ $post->title }}">Read More...</a>
             </div>
         </div>
     @endforeach

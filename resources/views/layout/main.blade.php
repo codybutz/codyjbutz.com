@@ -41,7 +41,7 @@
 
 <script src="/js/app.js"></script>
 
-@if(App::environment() == "prod")
+@if(App::environment('production'))
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
