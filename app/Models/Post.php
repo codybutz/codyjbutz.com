@@ -19,10 +19,10 @@ class Post extends Model
         'columns' => [
             'title'         => 10,
             'body'          => 5,
-            'category.name' => 2
+            'post_categories.name' => 2
         ],
         'joins'   => [
-            'category' => ['posts.category_id', 'post_category.id'],
+            'post_categories' => ['posts.category_id', 'post_categories.id'],
         ],
     ];
 

@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Http\Requests\SearchRequest;
 use App\Models\Post;
 use App\Models\PostCategory;
 use Conner\Tagging\Tag;
@@ -58,4 +59,18 @@ class BlogController extends Controller
 
         return view('blog.tag', compact(array('tag', 'posts')));
     }
+
+    /**
+     * Display the specified resource.
+     *
+     * @return View
+     */
+    public function search(SearchRequest $request)
+    {
+        $posts = Post::search($request->get('search'))->get();
+        echo count($posts);
+
+        return view('blog.search', compact('posts'));
+    }
+
 }
