@@ -2,7 +2,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="avatar">
                     <img src="/img/cody.png" width="78" height="78"/>
                 </div>
@@ -15,7 +15,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
 
             </div>
         </div>
