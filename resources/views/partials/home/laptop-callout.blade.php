@@ -1,6 +1,5 @@
 <div class="laptop-callout">
     <div class="container">
-        <p>Project your identity on the web, to promote yourself online and find new customers, interpreting your ideas,
-            your communication needs, involving you in every phase of my work.</p>
+        <p>It is my job to design, develop, deploy, and maintain your website. Let me interpret your dreams and ideas and bring them to life.</p>
     </div>
 </div>

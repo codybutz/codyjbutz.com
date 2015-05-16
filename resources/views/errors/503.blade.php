@@ -34,7 +34,9 @@
 <body>
 <div class="container">
     <div class="content">
-        <div class="title">Be right back.</div>
+        <img src="/img/cody-rounded.png"/>
+
+        <div class="title">Currently under construction.</div>
     </div>
 </div>
 </body>

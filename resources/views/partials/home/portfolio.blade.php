@@ -11,17 +11,17 @@
         <br/>
 
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <div class="item">
                     <img src="/img/portfolio/item1.png"/>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <div class="item">
                     <img src="/img/portfolio/item2.png"/>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <div class="item">
                     <img src="/img/portfolio/item1.png"/>
                 </div>

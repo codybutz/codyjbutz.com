@@ -23,7 +23,8 @@
                     </div>
 
                     <div class="info">
-                        I ensure all my web code meets the highest web standards that works across all major browsers and is S.E.O friendly.
+                        Throught my understanding of key server-side web development concepts, I am able to interpret graphic and interactive designs
+                        using HTML, CSS, and Javascript.
                     </div>
                 </div>
             </div>
@@ -39,7 +40,8 @@
                     </div>
 
                     <div class="info">
-                        I'm experienced with setting up, maintaining, and troubleshooting Linux servers.
+                        My experienced with setting up, maintaining, and troubleshooting Linux servers is priceless. I have valuable experience
+                        deploying Linux web servers using tools such as Capistrano, Envoyer.io, and Git Hooks.
                     </div>
                 </div>
             </div>
