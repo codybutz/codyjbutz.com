@@ -25,7 +25,7 @@
                                 {{ $testimonial->author }}
                                 @if(strlen($testimonial->autor_company) > 0)
                                     ,
-                                    @if($testimonial->author_company_link)
+                                    @if(strlen($testimonial->author_company_link) > 0)
                                         <a href="{{$testimonial->author_company_link}}"
                                              title="{{$testimonial->author_company}}">{{ $testimonial->author_company }}</a>
                                     @else
