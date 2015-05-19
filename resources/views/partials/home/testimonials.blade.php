@@ -22,7 +22,16 @@
 
                         <div class="footer">
                             <cite>
-                                {{ $testimonial->author }}{{ $testimonial->author_company != "" ? ", " . $testimonial->author_company : ""}}
+                                {{ $testimonial->author }}
+                                @if(strlen($post->autor_company) > 0)
+                                    @if($post->author_company_link)
+                                        , <a href="{{$testimonial->author_company_link}}"
+                                             title="{{$testimonial->author_company}}">{{ $testimonial->author_company }}</a>
+                                    @else
+                                        , {{$testimonial->author_company}}
+                                    @endif
+                                @endif
+                                {{ $testimonial->author_company != "" ? ", " . $testimonial->author_company : ""}}
                             </cite>
                         </div>
                     </div>
