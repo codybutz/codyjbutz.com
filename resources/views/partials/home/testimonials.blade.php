@@ -23,7 +23,7 @@
                         <div class="footer">
                             <cite>
                                 {{ $testimonial->author }}
-                                @if(strlen($testimonial->autor_company) > 0)
+                                @if(strlen($testimonial->author_company) > 0)
                                     ,
                                     @if(strlen($testimonial->author_company_link) > 0)
                                         <a href="{{$testimonial->author_company_link}}"
@@ -32,7 +32,6 @@
                                         {{$testimonial->author_company}}
                                     @endif
                                 @endif
-                                {{ $testimonial->author_company != "" ? ", " . $testimonial->author_company : ""}}
                             </cite>
                         </div>
                     </div>
