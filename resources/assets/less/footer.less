@@ -19,6 +19,23 @@ footer {
     background-color: #111111;
     padding: 25px 0;
     text-align: center;
+
+    #copyright {
+      text-align: left;
+
+      @media only screen and (max-width: @screen-sm) {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+
+    #icons {
+      text-align: right;
+
+      @media only screen and (max-width: @screen-sm) {
+        text-align: center;
+      }
+    }
   }
 
   .social-icons {

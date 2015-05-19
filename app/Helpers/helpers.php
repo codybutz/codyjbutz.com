@@ -110,7 +110,6 @@ function truncate($text, $length = 100, $ending = '...', $exact = false, $consid
 
 function tagStyle(Tag $tag)
 {
-    $tagCount = 0;
     if (!Cache::has('tag_maxCount')) {
         $tagCount = Tag::orderBy('count', 'DESC')->first()->count;
 
@@ -118,28 +117,21 @@ function tagStyle(Tag $tag)
     } else {
         $tagCount = Cache::get('tag_maxCount');
     }
+
     $percent = ($tag->count / $tagCount);
     $tagFontSize = round((14 * $percent) + 10) . 'px';
 
     $tagFontWeight = '300';
     if ($percent < .15) {
         $tagFontWeight = '200';
-    } else {
-        if ($percent < .25) {
-            $tagFontWeight = '300';
-        } else {
-            if ($percent < .5) {
-                $tagFontWeight = '500';
-            } else {
-                if ($percent < .75) {
-                    $tagFontWeight = '700';
-                } else {
-                    if ($percent <= 1) {
-                        $tagFontWeight = '800';
-                    }
-                }
-            }
-        }
+    } elseif ($percent < .25) {
+        $tagFontWeight = '300';
+    } elseif ($percent < .5) {
+        $tagFontWeight = '500';
+    } elseif ($percent < .75) {
+        $tagFontWeight = '700';
+    } elseif ($percent <= 1) {
+        $tagFontWeight = '800';
     }
 
     return "font-size: " . $tagFontSize . '; font-weight: ' . $tagFontWeight . ';';

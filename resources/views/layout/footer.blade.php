@@ -50,13 +50,11 @@
     <div class="copyright">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="text-left" style="margin: auto;">
-                        Copyright &copy; 2015 - Cody Butz
-                    </div>
+                <div class="col-sm-6" id="copyright">
+                    Copyright &copy; 2015 - Cody Butz
                 </div>
-                <div class="col-sm-6">
-                    <div class="text-right" style="color: white; font-size: 36px;">
+                <div class="col-sm-6" id="icons">
+                    <div style="">
                         @include('partials.social-icons')
                     </div>
                 </div>
