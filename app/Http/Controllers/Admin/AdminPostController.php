@@ -7,6 +7,7 @@ use App\Models\Post;
 use App\Models\PostCategory;
 use Conner\Tagging\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Input;
 use Redirect;
 use Response;
@@ -53,6 +54,7 @@ class AdminPostController extends Controller
         $post->title = Input::get('title');
         $post->body = Input::get('body');
         $post->status = Input::get('status');
+        $post->slug = Str::slug($post->title);
         $post->category()->associate(PostCategory::find(Input::get('category_id')));
 
         if (Input::hasFile('featuredImage')) {
@@ -106,6 +108,7 @@ class AdminPostController extends Controller
         $post->title = Input::get('title');
         $post->body = Input::get('body');
         $post->status = Input::get('status');
+        $post->slug = Str::slug($post->title);
         $post->category()->associate(PostCategory::find(Input::get('category_id')));
 
 
