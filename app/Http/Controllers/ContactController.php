@@ -28,7 +28,7 @@ class ContactController extends Controller
             });
 
         return \Redirect::route('contact')
-            ->with('message', 'Thanks for contacting us!');
+            ->with('message', 'Thanks for contacting me! I typically check my email daily, I will get back to you as soon as possible.');
     }
 
 }

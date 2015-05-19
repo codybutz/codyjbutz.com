@@ -19,7 +19,7 @@
                     </div>
 
                     <div class="title">
-                        Web Developer
+                        Web Development
                     </div>
 
                     <div class="info">
