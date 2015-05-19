@@ -13,6 +13,14 @@
         <b>Category: </b> {{$post->category->name}}
     </div>
 
+    <div class="text-right">
+        <span class='st_facebook_large' displayText='Facebook'></span>
+        <span class='st_twitter_large' displayText='Tweet'></span>
+        <span class='st_linkedin_large' displayText='LinkedIn'></span>
+        <span class='st_email_large' displayText='Email'></span>
+    </div>
+    <br/>
+
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES * * */
@@ -32,4 +40,14 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
     </noscript>
+
+    <script type="text/javascript">var switchTo5x = true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({
+            publisher: "55dc45a6-dcd4-414a-9331-b4255c37121e",
+            doNotHash: false,
+            doNotCopy: false,
+            hashAddressBar: false
+        });</script>
+
 </div>
