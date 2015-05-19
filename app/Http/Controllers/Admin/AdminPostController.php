@@ -3,7 +3,15 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Models\Post;
+use App\Models\PostCategory;
+use Conner\Tagging\Tag;
 use Illuminate\Http\Request;
+use Input;
+use Redirect;
+use Response;
+use Session;
+use View;
 
 class AdminPostController extends Controller
 {
@@ -15,7 +23,9 @@ class AdminPostController extends Controller
      */
     public function index()
     {
-        return "AdminPostController@index";
+        $posts = Post::all();
+
+        return View::make('admin.posts.index')->with('posts', $posts);
     }
 
     /**
@@ -25,7 +35,10 @@ class AdminPostController extends Controller
      */
     public function create()
     {
-        //
+        $categories = PostCategory::lists('name', 'id');
+        $tags = Tag::lists('name', 'name');
+
+        return view('admin.posts.create', compact('tags', 'categories'));
     }
 
     /**
@@ -35,18 +48,34 @@ class AdminPostController extends Controller
      */
     public function store()
     {
-        //
-    }
+        $post = new Post();
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     * @return Response
-     */
-    public function show($id)
-    {
-        //
+        $post->title = Input::get('title');
+        $post->body = Input::get('body');
+        $post->status = Input::get('status');
+        $post->category()->associate(PostCategory::find(Input::get('category_id')));
+
+        if (Input::hasFile('featuredImage')) {
+            $image = Input::file('featuredImage');
+
+            $image->move(__DIR__ . '/storage/', $image->getClientOriginalName());
+            $post->setFeaturedImage(__DIR__ . '/storage/' . $image->getClientOriginalName());
+        }
+
+
+        if ($post->save()) {
+
+            if (Input::has('tagged')) {
+                $removeTags = array_diff($post->tagNames(), Input::get('tagged'));
+                foreach ($removeTags as $tag) {
+                    $post->untag($tag);
+                }
+
+                $post->tag(Input::get('tagged'));
+            }
+
+            return Redirect::route('admin.posts.index');
+        }
     }
 
     /**
@@ -57,7 +86,11 @@ class AdminPostController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::with('tagged')->find($id);
+        $categories = PostCategory::lists('name', 'id');
+        $tags = Tag::lists('name', 'name');
+
+        return view('admin.posts.edit', compact('post', 'tags', 'categories'));
     }
 
     /**
@@ -68,7 +101,32 @@ class AdminPostController extends Controller
      */
     public function update($id)
     {
-        //
+        $post = Post::find($id);
+
+        $post->title = Input::get('title');
+        $post->body = Input::get('body');
+        $post->status = Input::get('status');
+        $post->category()->associate(PostCategory::find(Input::get('category_id')));
+
+
+        if (Input::hasFile('featuredImage')) {
+            $image = Input::file('featuredImage');
+
+            $image->move(__DIR__ . '/storage/', $image->getClientOriginalName());
+            $post->setFeaturedImage(__DIR__ . '/storage/' . $image->getClientOriginalName());
+        }
+        if (Input::has('tagged')) {
+            $removeTags = array_diff($post->tagNames(), Input::get('tagged'));
+            foreach ($removeTags as $tag) {
+                $post->untag($tag);
+            }
+
+            $post->tag(Input::get('tagged'));
+        }
+
+        if ($post->save()) {
+            return Redirect::route('admin.posts.index');
+        }
     }
 
     /**
@@ -79,7 +137,10 @@ class AdminPostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Post::destroy($id);
+        Session::flash('message', 'You have successfull deleted a blog post');
+
+        return Redirect::route('admin.posts.index');
     }
 
 }

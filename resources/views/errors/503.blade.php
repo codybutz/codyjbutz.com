@@ -35,7 +35,7 @@
 <div class="container">
     <div class="content">
         <img src="/img/cody-rounded.png"/>
-
+        <br/>
         <div class="title">Currently under construction.</div>
     </div>
 </div>

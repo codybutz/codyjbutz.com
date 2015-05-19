@@ -5,6 +5,8 @@ use Illuminate\Database\Eloquent\Model;
 class PostCategory extends Model
 {
 
+    public $timestamps = false;
+
     public function posts()
     {
         return $this->hasMany('App\Models\Post', 'category_id');

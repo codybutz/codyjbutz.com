@@ -8,6 +8,6 @@ class UserTableSeeder extends Seeder
 
     public function run()
     {
-        User::updateOrCreate(['email' => 'codyjbutz@gmail.com'], ['password' => bcrypt(env('ADMIN_PASS'))]);
+        User::updateOrCreate(['email' => env('ADMIN_EMAIL')], ['password' => bcrypt(env('ADMIN_PASS'))]);
     }
 }

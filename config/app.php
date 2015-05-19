@@ -138,6 +138,7 @@ return [
         'App\Providers\RouteServiceProvider',
         'App\Providers\ComposerServiceProvider',
         'Conner\Tagging\TaggingServiceProvider',
+        'Spatie\MediaLibrary\MediaLibraryServiceProvider',
     ],
     /*
     |--------------------------------------------------------------------------
@@ -186,7 +187,8 @@ return [
         'View'      => 'Illuminate\Support\Facades\View',
         'Debugbar'  => 'Barryvdh\Debugbar\Facade',
         'Form'      => 'Illuminate\Html\FormFacade',
-        'HTML'      => 'Illuminate\Html\HtmlFacade'
+        'HTML'         => 'Illuminate\Html\HtmlFacade',
+        'MediaLibrary' => 'Spatie\MediaLibrary\MediaLibraryFacade'
     ],
 
 ];

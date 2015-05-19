@@ -7,7 +7,7 @@
         <h1>Contact Cody Butz</h1>
 
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-sm-8">
                 <ul>
                     @foreach($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -51,7 +51,7 @@
                 {!! Form::close() !!}
 
             </div>
-            <div class="col-lg-4">
+            <div class="col-sm-4">
                 <div class="well well-md">
                     <p><i class="fa fa-fw fa-user text-custom"></i>&nbsp;Cody James Butz</p>
 

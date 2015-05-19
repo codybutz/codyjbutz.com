@@ -8,13 +8,9 @@
     </div>
     <br/>
 
-    <div class="row">
-        <div class="col-lg-offset-1 col-lg-10">
-            <p class="aboutme-callout">
-                Outside of doing classwork and hanging out with family and friends, I like to spend my time developing websites. I consider myself a
-                Full-Stack Web Developer, making myself exceptionally valuable as I am able to adapt quickly and able to provide experience and advice
-                on all aspects of a project.
-            </p>
-        </div>
-    </div>
+    <p class="aboutme-callout">
+        Outside of doing classwork and hanging out with family and friends, I like to spend my time developing websites. I consider myself a
+        Full-Stack Web Developer, making myself exceptionally valuable as I am able to adapt quickly and able to provide experience and advice
+        on all aspects of a project.
+    </p>
 </div>

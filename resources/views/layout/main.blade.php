@@ -20,8 +20,8 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"/>
-    <link rel="stylesheet" href="/vendor/css/slick.css"/>
-    <link rel="stylesheet" href="/vendor/css/slick-theme.css"/>
+    <link rel="stylesheet" href="/vendor/css/select2.min.css"/>
+    <link rel="stylesheet" href="/vendor/css/bootstrap-markdown.min.css"/>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -36,8 +36,12 @@
 
 <script src="/vendor/js/jquery.min.js"></script>
 <script src="/vendor/js/modernizr.min.js"></script>
-<script src="/vendor/js/slick.min.js"></script>
 <script src="/vendor/js/bootstrap.min.js"></script>
+<script src="/vendor/js/select2.full.min.js"></script>
+<script src="/vendor/js/markdown.js"></script>
+<script src="/vendor/js/marked.js"></script>
+<script src="/vendor/js/to-markdown.js"></script>
+<script src="/vendor/js/bootstrap-markdown.js"></script>
 
 <script src="/js/app.js"></script>
 

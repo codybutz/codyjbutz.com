@@ -22,7 +22,7 @@ class BlogSidebarComposer
             return count($cat->posts()->published()->get());
         }, SORT_REGULAR, true));
 
-        $view->with('tags', Tag::orderBy(DB::raw('RAND()'))->limit(15)->get());
+        $view->with('tags', Tag::orderBy(DB::raw('RAND()'))->limit(15)->where('count', '>', '0')->get());
     }
 
 }

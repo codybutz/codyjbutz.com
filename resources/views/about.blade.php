@@ -14,8 +14,11 @@
     {{-- Features --}}
     @include('partials.home.services')
 
+    {{-- Blog --}}
+    @include('partials.home.blog', $posts)
+
     {{-- Portfolio --}}
-    @include('partials.home.portfolio')
+    {{--@include('partials.home.portfolio')--}}
 
     {{-- Testimonials--}}
     @include('partials.home.testimonials')

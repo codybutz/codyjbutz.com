@@ -1,6 +1,7 @@
-$('.slider').slick({
-    infinite: true,
-    slidesToShow: 1,
-    arrows: true,
-    dots: true
+$('.tagList').select2({
+    placeholder: 'Choose a tag',
+    tags: true,
+    tokenSeparators: [',']
 });
+
+$(".markdown-editor").markdown({iconlibrary: 'fa'});
