@@ -74,8 +74,7 @@ class Post extends Model implements MediaLibraryModelInterface
     public function getImageProfileProperties()
     {
         return [
-            'timeline'  => ['w' => 300, 'h' => 300, 'fit' => 'stretch', 'fmt' => 'png'],
-            'timeline2' => ['w' => 300, 'h' => 300, 'fit' => 'stretch', 'fmt' => 'png'],
+            'timeline' => ['w' => 300, 'h' => 300, 'fit' => 'stretch', 'fm' => 'png']
         ];
     }
 }

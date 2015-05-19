@@ -22,7 +22,7 @@
 
                         <div class="footer">
                             <cite>
-                                {{ $testimonial->author }}{{ isset($testimonial->author_company) ? ", " . $testimonial->author_company : ""}}
+                                {{ $testimonial->author }}{{ $testimonial->author_company != "" ? ", " . $testimonial->author_company : ""}}
                             </cite>
                         </div>
                     </div>
