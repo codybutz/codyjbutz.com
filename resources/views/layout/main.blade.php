@@ -20,7 +20,7 @@
 
     <meta charset="UTF-8">
     <meta name="description" content="Cody is an outgoing, enthusiastic freelance web developer who aspires to learn new technologies everyday.">
-    <meta name="keywords" content="PHP,Web Development,Laravel,Ruby on Rails,HTML,CSS,JavaScript">
+    <meta name="keywords" content="PHP,Web Development,Laravel,JavaScript,Ruby on Rails,HTML,CSS">
     <meta name="author" content="Cody Butz">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
