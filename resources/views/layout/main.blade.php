@@ -11,10 +11,12 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
 <!--<![endif]-->
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Cody Butz - @yield('title', "Web Portfolio") - Full-Stack Web Developer</title>
+
+    <link rel="icon" type="image/png" href="/favicon.ico">
 
     <meta charset="UTF-8">
     <meta name="description" content="Cody is an outgoing, enthusiastic freelance web developer who aspires to learn new technologies everyday.">
