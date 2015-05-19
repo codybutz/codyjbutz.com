@@ -23,7 +23,7 @@
                         <div class="footer">
                             <cite>
                                 {{ $testimonial->author }}
-                                @if(strlen($post->autor_company) > 0)
+                                @if(strlen($testimonial->autor_company) > 0)
                                     ,
                                     @if($testimonial->author_company_link)
                                         <a href="{{$testimonial->author_company_link}}"
