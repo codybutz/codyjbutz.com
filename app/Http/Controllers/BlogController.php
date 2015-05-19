@@ -57,7 +57,7 @@ class BlogController extends Controller
     {
         $posts = Post::withAnyTag(array($tag->name))->get();
 
-        return view('blog.tag', compact(array('tag', 'posts')));
+        return view('blog.tag', compact('tag', 'posts'));
     }
 
     /**
