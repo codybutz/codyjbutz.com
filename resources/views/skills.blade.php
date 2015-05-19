@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'My Skills')
+
 @section('content')
 
     {{-- Slider --}}

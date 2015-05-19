@@ -68,7 +68,6 @@ class BlogController extends Controller
     public function search(SearchRequest $request)
     {
         $posts = Post::search($request->get('search'))->get();
-        echo count($posts);
 
         return view('blog.search', compact('posts'));
     }

@@ -1,5 +1,7 @@
 @extends('layout.main')
 
+@section('title', 'Contact Me')
+
 @section('content')
 
 

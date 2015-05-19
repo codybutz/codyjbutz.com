@@ -14,10 +14,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
+    <title>Cody Butz - @yield('title', "Web Portfolio") - Full-Stack Web Developer</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Cody is an outgoing, enthusiastic freelance web developer who aspires to learn new technologies everyday.">
+    <meta name="keywords" content="PHP,Web Development,Laravel,Ruby on Rails,HTML,CSS,JavaScript">
+    <meta name="author" content="Cody Butz">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}"/>
     <link rel="stylesheet" href="/vendor/css/select2.min.css"/>
