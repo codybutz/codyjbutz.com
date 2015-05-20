@@ -57,15 +57,16 @@ class AdminPostController extends Controller
         $post->slug = Str::slug($post->title);
         $post->category()->associate(PostCategory::find(Input::get('category_id')));
 
-        if (Input::hasFile('featuredImage')) {
-            $image = Input::file('featuredImage');
-
-            $image->move(__DIR__ . '/storage/', $image->getClientOriginalName());
-            $post->setFeaturedImage(__DIR__ . '/storage/' . $image->getClientOriginalName());
-        }
 
 
         if ($post->save()) {
+
+            if (Input::hasFile('featuredImage')) {
+                $image = Input::file('featuredImage');
+
+                $image->move(__DIR__ . '/storage/', $image->getClientOriginalName());
+                $post->setFeaturedImage(__DIR__ . '/storage/' . $image->getClientOriginalName());
+            }
 
             if (Input::has('tagged')) {
                 $removeTags = array_diff($post->tagNames(), Input::get('tagged'));
