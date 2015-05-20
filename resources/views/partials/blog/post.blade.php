@@ -27,6 +27,7 @@
         var disqus_shortname = 'codyjbutzcom';
         var disqus_identifier = '{{$post->slug}}';
         var disqus_title = '{{$post->title}}';
+        var disqus_url = '{{ Request::url() }}';
         var disqus_category_id = '{{$post->category->name}}';
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function () {
