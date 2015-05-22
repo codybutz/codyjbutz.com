@@ -11,7 +11,7 @@
             color: #B0BEC5;
             display: table;
             font-weight: 100;
-            font-family: 'Lato';
+            font-family: 'Lato', sans-serif;
         }
 
         .container {
@@ -34,7 +34,7 @@
 <body>
 <div class="container">
     <div class="content">
-        <img src="/img/cody-rounded.png"/>
+        <img src="/img/cody-rounded.png" width="200"/>
         <br/>
         <div class="title">Currently under construction.</div>
     </div>
