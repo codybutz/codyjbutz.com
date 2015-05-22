@@ -12,10 +12,6 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function (mix) {
-    mix.less('app.less');
-    mix.scripts(
-        [
-            'vendor/*.js', '*.js'
-        ],
-        'public/js/app.js', 'resources/assets/js/');
+    mix.less('app.less')
+        .scripts(['*.js'], 'public/js/app.js', 'resources/assets/js/');
 });
