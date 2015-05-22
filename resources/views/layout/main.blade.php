@@ -40,10 +40,15 @@
 
 @include('layout.footer')
 
-<script src="/vendor/js/jquery.min.js"></script>
-<script src="/vendor/js/modernizr.min.js"></script>
-<script src="/vendor/js/bootstrap.min.js"></script>
-<script src="/vendor/js/select2.full.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 <script src="/vendor/js/markdown.js"></script>
 <script src="/vendor/js/marked.js"></script>
 <script src="/vendor/js/to-markdown.js"></script>
