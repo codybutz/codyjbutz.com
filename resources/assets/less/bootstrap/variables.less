@@ -2,7 +2,6 @@
 // Variables
 // --------------------------------------------------
 
-
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
@@ -19,13 +18,12 @@
 @gray-lighter: lighten(@gray-base, 93.5%);
 // #eee
 
-@brand-primary: darken(#428bca, 6.5%);
+@brand-primary: #2098d1;
 // #337ab7
 @brand-success: #5cb85c;
 @brand-info: #5bc0de;
 @brand-warning: #f0ad4e;
 @brand-danger: #d9534f;
-
 
 //== Scaffolding
 //
@@ -43,21 +41,20 @@
 //** Link hover decoration.
 @link-hover-decoration: underline;
 
-
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif: "Lato", Helvetica, Arial, sans-serif;
 @font-family-serif: Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base: @font-family-sans-serif;
 
 @font-size-base: 14px;
-@font-size-large: ceil((@font-size-base * 1.25));
+@font-size-large: 16px;
 // ~18px
-@font-size-small: ceil((@font-size-base * 0.85));
+@font-size-small: 12px;
 // ~12px
 
 @font-size-h1: floor((@font-size-base * 2.6));
@@ -85,18 +82,16 @@
 @headings-line-height: 1.1;
 @headings-color: inherit;
 
-
 //== Iconography
 //
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
 //** Load fonts from this directory.
-@icon-font-path: "../fonts/";
+@icon-font-path: "/fonts/";
 //** File name for all font files.
 @icon-font-name: "glyphicons-halflings-regular";
 //** Element ID within SVG icon file.
 @icon-font-svg-id: "glyphicons_halflingsregular";
-
 
 //== Components
 //
@@ -118,9 +113,9 @@
 // extra decimals for Win 8.1 Chrome
 @line-height-small: 1.5;
 
-@border-radius-base: 4px;
-@border-radius-large: 6px;
-@border-radius-small: 3px;
+@border-radius-base: 2px;
+@border-radius-large: 4px;
+@border-radius-small: 1px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color: #fff;
@@ -131,7 +126,6 @@
 @caret-width-base: 4px;
 //** Carets increase slightly in size for larger components.
 @caret-width-large: 5px;
-
 
 //== Tables
 //
@@ -152,7 +146,6 @@
 
 //** Border color for table and cell borders.
 @table-border-color: #ddd;
-
 
 //== Buttons
 //
@@ -185,7 +178,6 @@
 @btn-danger-border: darken(@btn-danger-bg, 5%);
 
 @btn-link-disabled-color: @gray-light;
-
 
 //== Forms
 //
@@ -237,7 +229,6 @@
 //** Disabled cursor for form controls and buttons.
 @cursor-disabled: not-allowed;
 
-
 //== Dropdowns
 //
 //## Dropdown menu container and contents.
@@ -272,7 +263,6 @@
 //** Deprecated `@dropdown-caret-color` as of v3.1.0
 @dropdown-caret-color: #000;
 
-
 //-- Z-index master list
 //
 // Warning: Avoid customizing these values. They're used for a bird's eye view
@@ -287,7 +277,6 @@
 @zindex-navbar-fixed: 1030;
 @zindex-modal-background: 1040;
 @zindex-modal: 1050;
-
 
 //== Media queries breakpoints
 //
@@ -327,7 +316,6 @@
 @screen-sm-max: (@screen-md-min - 1);
 @screen-md-max: (@screen-lg-min - 1);
 
-
 //== Grid system
 //
 //## Define your custom responsive grid.
@@ -341,7 +329,6 @@
 @grid-float-breakpoint: @screen-sm-min;
 //** Point at which the navbar begins collapsing.
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
-
 
 //== Container sizes
 //
@@ -362,30 +349,29 @@
 //** For `@screen-lg-min` and up.
 @container-lg: @container-large-desktop;
 
-
 //== Navbar
 //
 //##
 
 // Basics of a navbar
-@navbar-height: 50px;
+@navbar-height: 70px;
 @navbar-margin-bottom: @line-height-computed;
 @navbar-border-radius: @border-radius-base;
 @navbar-padding-horizontal: floor((@grid-gutter-width / 2));
 @navbar-padding-vertical: ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height: 340px;
 
-@navbar-default-color: #777;
-@navbar-default-bg: #f8f8f8;
+@navbar-default-color: #ffffff;
+@navbar-default-bg: @primary-color;
 @navbar-default-border: darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color: #777;
-@navbar-default-link-hover-color: #333;
+@navbar-default-link-color: #ffffff;
+@navbar-default-link-hover-color: #ffffff;
 @navbar-default-link-hover-bg: transparent;
-@navbar-default-link-active-color: #555;
+@navbar-default-link-active-color: #ffffff;
 @navbar-default-link-active-bg: darken(@navbar-default-bg, 6.5%);
-@navbar-default-link-disabled-color: #ccc;
+@navbar-default-link-disabled-color: #ffffff;
 @navbar-default-link-disabled-bg: transparent;
 
 // Navbar brand label
@@ -398,11 +384,10 @@
 @navbar-default-toggle-icon-bar-bg: #888;
 @navbar-default-toggle-border-color: #ddd;
 
-
 // Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color: lighten(@gray-light, 15%);
-@navbar-inverse-bg: #222;
+@navbar-inverse-bg: #233140;
 @navbar-inverse-border: darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
@@ -423,7 +408,6 @@
 @navbar-inverse-toggle-hover-bg: #333;
 @navbar-inverse-toggle-icon-bar-bg: #fff;
 @navbar-inverse-toggle-border-color: #333;
-
 
 //== Navs
 //
@@ -453,7 +437,6 @@
 @nav-pills-active-link-hover-bg: @component-active-bg;
 @nav-pills-active-link-hover-color: @component-active-color;
 
-
 //== Pagination
 //
 //##
@@ -474,7 +457,6 @@
 @pagination-disabled-bg: #fff;
 @pagination-disabled-border: #ddd;
 
-
 //== Pager
 //
 //##
@@ -490,7 +472,6 @@
 
 @pager-disabled-color: @pagination-disabled-color;
 
-
 //== Jumbotron
 //
 //##
@@ -500,7 +481,6 @@
 @jumbotron-bg: @gray-lighter;
 @jumbotron-heading-color: inherit;
 @jumbotron-font-size: ceil((@font-size-base * 1.5));
-
 
 //== Form states and alerts
 //
@@ -522,7 +502,6 @@
 @state-danger-bg: #f2dede;
 @state-danger-border: darken(spin(@state-danger-bg, -10), 5%);
 
-
 //== Tooltips
 //
 //##
@@ -539,7 +518,6 @@
 @tooltip-arrow-width: 5px;
 //** Tooltip arrow color
 @tooltip-arrow-color: @tooltip-bg;
-
 
 //== Popovers
 //
@@ -569,7 +547,6 @@
 //** Popover outer arrow fallback color
 @popover-arrow-outer-fallback-color: darken(@popover-fallback-border-color, 20%);
 
-
 //== Labels
 //
 //##
@@ -591,7 +568,6 @@
 @label-color: #fff;
 //** Default text color of a linked label
 @label-link-hover-color: #fff;
-
 
 //== Modals
 //
@@ -625,7 +601,6 @@
 @modal-md: 600px;
 @modal-sm: 300px;
 
-
 //== Alerts
 //
 //## Define alert colors, border radius, and padding.
@@ -650,7 +625,6 @@
 @alert-danger-text: @state-danger-text;
 @alert-danger-border: @state-danger-border;
 
-
 //== Progress bars
 //
 //##
@@ -672,7 +646,6 @@
 @progress-bar-danger-bg: @brand-danger;
 //** Info progress bar color
 @progress-bar-info-bg: @brand-info;
-
 
 //== List group
 //
@@ -706,7 +679,6 @@
 @list-group-link-color: #555;
 @list-group-link-hover-color: @list-group-link-color;
 @list-group-link-heading-color: #333;
-
 
 //== Panels
 //
@@ -745,7 +717,6 @@
 @panel-danger-text: @state-danger-text;
 @panel-danger-border: @state-danger-border;
 @panel-danger-heading-bg: @state-danger-bg;
-
 
 //== Thumbnails
 //
