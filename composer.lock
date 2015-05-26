@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "hash": "840ddc05e16ff6f136f21da98fe1b312",
@@ -361,32 +361,32 @@
         },
         {
             "name": "graham-campbell/markdown",
-            "version": "v3.0.2",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Laravel-Markdown.git",
-                "reference": "32ba7796fe6a3ee78b40b8083e290bc166b612bd"
+                "reference": "f57d81dadbb92fc1ccfc18ae772ee25059ef2a57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Markdown/zipball/32ba7796fe6a3ee78b40b8083e290bc166b612bd",
-                "reference": "32ba7796fe6a3ee78b40b8083e290bc166b612bd",
+                "url": "https://api.github.com/repos/GrahamCampbell/Laravel-Markdown/zipball/f57d81dadbb92fc1ccfc18ae772ee25059ef2a57",
+                "reference": "f57d81dadbb92fc1ccfc18ae772ee25059ef2a57",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "5.0.*",
-                "illuminate/support": "5.0.*",
-                "illuminate/view": "5.0.*",
+                "illuminate/contracts": "5.0.*|5.1.*",
+                "illuminate/support": "5.0.*|5.1.*",
+                "illuminate/view": "5.0.*|5.1.*",
                 "league/commonmark": "0.8.*",
-                "php": ">=5.4.7"
+                "php": ">=5.5.9"
             },
             "require-dev": {
-                "graham-campbell/testbench": "~2.0"
+                "graham-campbell/testbench": "~2.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -416,7 +416,7 @@
                 "laravel",
                 "markdown"
             ],
-            "time": "2015-05-07 13:59:12"
+            "time": "2015-05-20 22:50:07"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1096,16 +1096,16 @@
         },
         {
             "name": "league/glide",
-            "version": "0.3.3",
+            "version": "0.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/glide.git",
-                "reference": "627e06a1f9000185dbb8c239bf0c358edda83f4a"
+                "reference": "57a10a4b8049f9efb7debb5cfd9718f897e205d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/glide/zipball/627e06a1f9000185dbb8c239bf0c358edda83f4a",
-                "reference": "627e06a1f9000185dbb8c239bf0c358edda83f4a",
+                "url": "https://api.github.com/repos/thephpleague/glide/zipball/57a10a4b8049f9efb7debb5cfd9718f897e205d3",
+                "reference": "57a10a4b8049f9efb7debb5cfd9718f897e205d3",
                 "shasum": ""
             },
             "require": {
@@ -1154,7 +1154,7 @@
                 "manipulation",
                 "processing"
             ],
-            "time": "2015-03-19 19:53:08"
+            "time": "2015-05-22 23:35:09"
         },
         {
             "name": "maximebf/debugbar",
@@ -1378,19 +1378,20 @@
         },
         {
             "name": "nicolaslopezj/searchable",
-            "version": "1.5.8",
+            "version": "1.5.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nicolaslopezj/searchable.git",
-                "reference": "edaae6225162bb194b1ead9fc93697a7dc0c9a3b"
+                "reference": "8b049e0e7f0e1fad61783640a908ebccafe5b8c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nicolaslopezj/searchable/zipball/edaae6225162bb194b1ead9fc93697a7dc0c9a3b",
-                "reference": "edaae6225162bb194b1ead9fc93697a7dc0c9a3b",
+                "url": "https://api.github.com/repos/nicolaslopezj/searchable/zipball/8b049e0e7f0e1fad61783640a908ebccafe5b8c1",
+                "reference": "8b049e0e7f0e1fad61783640a908ebccafe5b8c1",
                 "shasum": ""
             },
             "require": {
+                "ext-mbstring": "*",
                 "illuminate/database": "4.2.x|~5.0",
                 "php": ">=5.4.0"
             },
@@ -1419,7 +1420,7 @@
                 "search",
                 "searchable"
             ],
-            "time": "2015-05-12 23:03:07"
+            "time": "2015-05-20 18:51:40"
         },
         {
             "name": "nikic/php-parser",
@@ -1633,12 +1634,12 @@
             "version": "2.2.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/freekmurze/laravel-glide.git",
+                "url": "https://github.com/spatie/laravel-glide.git",
                 "reference": "66a48c7d78e3517a4d5a694761efa20b90c5521c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/freekmurze/laravel-glide/zipball/66a48c7d78e3517a4d5a694761efa20b90c5521c",
+                "url": "https://api.github.com/repos/spatie/laravel-glide/zipball/66a48c7d78e3517a4d5a694761efa20b90c5521c",
                 "reference": "66a48c7d78e3517a4d5a694761efa20b90c5521c",
                 "shasum": ""
             },
@@ -1672,16 +1673,16 @@
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "1.1.4",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/freekmurze/laravel-medialibrary.git",
-                "reference": "d9a504d3ecbcc2d4b9c2492a6b58041e0b4938a8"
+                "url": "https://github.com/spatie/laravel-medialibrary.git",
+                "reference": "03db21fe46bebde85ba6d2752f0e484aca3d8a49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/freekmurze/laravel-medialibrary/zipball/d9a504d3ecbcc2d4b9c2492a6b58041e0b4938a8",
-                "reference": "d9a504d3ecbcc2d4b9c2492a6b58041e0b4938a8",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/03db21fe46bebde85ba6d2752f0e484aca3d8a49",
+                "reference": "03db21fe46bebde85ba6d2752f0e484aca3d8a49",
                 "shasum": ""
             },
             "require": {
@@ -1705,20 +1706,20 @@
             ],
             "authors": [
                 {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://murze.be",
+                    "role": "Developer"
+                },
+                {
                     "name": "Matthias De Winter",
                     "email": "dewinter.matthias@gmail.com",
                     "homepage": "https://github.com/MatthiasDeWinter",
                     "role": "Developer"
-                },
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://github.com/freekmurze",
-                    "role": "Developer"
                 }
             ],
-            "description": "coming soon",
-            "homepage": "https://github.com/freekmurze/laravel-medialibrary",
+            "description": "Associate files with Eloquent models",
+            "homepage": "https://github.com/spatie/laravel-medialibrary",
             "keywords": [
                 "cms",
                 "laravel",
@@ -1726,7 +1727,7 @@
                 "media",
                 "spatie"
             ],
-            "time": "2015-05-17 22:28:50"
+            "time": "2015-05-22 20:26:08"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3331,16 +3332,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.0.16",
+            "version": "2.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "934fd03eb6840508231a7f73eb8940cf32c3b66c"
+                "reference": "c4e8e7725e351184a76544634855b8a9c405a6e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/934fd03eb6840508231a7f73eb8940cf32c3b66c",
-                "reference": "934fd03eb6840508231a7f73eb8940cf32c3b66c",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/c4e8e7725e351184a76544634855b8a9c405a6e3",
+                "reference": "c4e8e7725e351184a76544634855b8a9c405a6e3",
                 "shasum": ""
             },
             "require": {
@@ -3389,7 +3390,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-04-11 04:35:00"
+            "time": "2015-05-25 05:11:59"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -3577,16 +3578,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.6.6",
+            "version": "4.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3afe303d873a4d64c62ef84de491b97b006fbdac"
+                "reference": "57bf06dd4eebe2a5ced79a8de71509e7d5c18b25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3afe303d873a4d64c62ef84de491b97b006fbdac",
-                "reference": "3afe303d873a4d64c62ef84de491b97b006fbdac",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/57bf06dd4eebe2a5ced79a8de71509e7d5c18b25",
+                "reference": "57bf06dd4eebe2a5ced79a8de71509e7d5c18b25",
                 "shasum": ""
             },
             "require": {
@@ -3645,7 +3646,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-04-29 15:18:52"
+            "time": "2015-05-25 05:18:18"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
