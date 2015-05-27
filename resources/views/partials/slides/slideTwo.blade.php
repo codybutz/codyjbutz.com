@@ -9,7 +9,7 @@
     <div class="col-lg-7">
         <h2>Meet Me, Cody Butz.</h2>
 
-        <p class="callout small"> Cody is an outgoing, enthusiastic web developer who aspires to learn new technologies everyday. His love for
+        <p class="callout small"> Cody is an outgoing, enthusiastic web developer who aspires to learn new technologies every day. His love of
             computing and programming has helped him start web development at a young age. </p>
 
         <div class="text-right">

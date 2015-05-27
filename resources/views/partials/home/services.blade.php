@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="info">
-                        Throught my understanding of key server-side web development concepts, I am able to interpret graphic and interactive designs
+                        Through my understanding of key server-side web development concepts, I am able to interpret graphic and interactive designs
                         using HTML, CSS, and Javascript.
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="info">
-                        My experienced with setting up, maintaining, and troubleshooting Linux servers is priceless. I have valuable experience
+                        My experience with setting up, maintaining, and troubleshooting Linux servers is priceless. I have valuable experience
                         deploying Linux web servers using tools such as Capistrano, Envoyer.io, and Git Hooks.
                     </div>
                 </div>

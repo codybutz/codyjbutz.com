@@ -144,7 +144,7 @@
                     @include('partials.social-icons')
                     <div class="bio">
                         <p>Cody is an outgoing, enthusiastic web developer who aspires to learn new technologies
-                            everyday. His love for computing and programming has helped him start web development at a
+                            every day. His love of computing and programming has helped him start web development at a
                             young age. When not busy at work, Cody loves to go out boating, fishing, and having a great
                             time with family and friends.</p>
                         <a href="{{ route('contact') }}" class="btn btn-block btn-primary">Contact me</a>
