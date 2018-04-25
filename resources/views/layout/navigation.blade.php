@@ -27,8 +27,6 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a {{ Route::currentRouteName() == "index" ? 'class=active' : '' }} href="{{ route('index') }}">About</a></li>
                 <li><a {{ Route::currentRouteName() == "skills" ? 'class=active' : '' }} href="{{ route('skills') }}">Skills</a></li>
-                {{--<li><a {{ Route::currentRouteName() == "portfolio" ? 'class=active' : '' }} href="{{ route('portfolio') }}">Portfolio</a></li>--}}
-                <li><a {{ starts_with(Route::currentRouteName(), 'blog') ? 'class=active' : '' }} href="{{ route('blog.index') }}">Blog</a></li>
                 <li><a {{ Route::currentRouteName() == "contact" ? 'class=active' : '' }} href="{{ route('contact') }}">Contact Me</a></li>
                 @if(Auth::check())
                     <li><a {{ starts_with(Route::currentRouteName(), 'admin')  ? 'class=active' : '' }} href="{{ route('admin.index') }}">Admin</a>

@@ -8,10 +8,10 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "laravel/framework": "5.0.*",
+    "laravel/framework": "5.1.*",
     "graham-campbell/markdown": "~3.0",
     "barryvdh/laravel-debugbar": "~2.0",
-    "erusev/parsedown-extra": "dev-master",
+    "erusev/parsedown-extra": "^0.7.0",
     "rtconner/laravel-tagging": "~1.0.6",
     "nicolaslopezj/searchable": "~1.5",
     "guzzlehttp/guzzle": "~4.0",
@@ -22,7 +22,6 @@
     "phpunit/phpunit": "~4.0",
     "phpspec/phpspec": "~2.1",
     "laracasts/generators": "~1.1",
-    "barryvdh/laravel-ide-helper": "~2.0",
     "doctrine/dbal": "~2.5"
   },
   "autoload": {
@@ -48,9 +47,6 @@
     ],
     "post-update-cmd": [
       "php artisan clear-compiled",
-      "php artisan ide-helper:generate",
-      "php artisan ide-helper:models -N",
-      "php artisan ide-helper:meta",
       "php artisan optimize"
     ],
     "post-create-project-cmd": [

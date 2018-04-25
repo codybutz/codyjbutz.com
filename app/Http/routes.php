@@ -32,11 +32,6 @@ Route::get('/', ['uses' => 'SiteController@index', 'as' => 'index']);
 Route::get('/skills', ['uses' => 'SiteController@skills', 'as' => 'skills']);
 Route::get('/portfolio', ['uses' => 'SiteController@portfolio', 'as' => 'portfolio']);
 Route::get('/contact', ['uses' => 'SiteController@contact', 'as' => 'contact']);
-Route::get('/blog', ['uses' => 'BlogController@index', 'as' => 'blog.index']);
-Route::get('/blog/category/{category}', ['uses' => 'BlogController@category', 'as' => 'blog.category']);
-Route::get('/blog/tag/{tag}', ['uses' => 'BlogController@tag', 'as' => 'blog.tag']);
-Route::get('/blog/search', ['uses' => 'BlogController@search', 'as' => 'blog.search']);
-Route::get('/blog/{post}', ['uses' => 'BlogController@post', 'as' => 'blog.post']);
 
 Route::get('contact', ['as' => 'contact', 'uses' => 'ContactController@create']);
 Route::post('contact', ['as' => 'contact.store', 'uses' => 'ContactController@store']);

@@ -10,17 +10,11 @@
     {{-- About Me --}}
     @include('partials.home.aboutme')
 
-    {{-- Laptop Callout --}}
-    @include('partials.home.laptop-callout')
-
     {{-- Features --}}
     @include('partials.home.services')
 
-    {{-- Blog --}}
-    @include('partials.home.blog', $posts)
-
-    {{-- Portfolio --}}
-    {{--@include('partials.home.portfolio')--}}
+    {{-- Laptop Callout --}}
+    @include('partials.home.laptop-callout')
 
     {{-- Testimonials--}}
     @include('partials.home.testimonials')
